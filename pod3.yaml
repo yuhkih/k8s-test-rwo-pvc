@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod3
+spec: 
+  nodeSelector:
+    kubernetes.io/hostname: ocp48-h49p6-worker-2dmjq
+  containers:
+  - image: ubi8:latest 
+    name: pod3
+    command:
+    - sleep
+    - infinity
+    volumeMounts:
+    - mountPath: /mnt/data
+      name: myvolume
+  volumes:
+  - name: myvolume
+    persistentVolumeClaim:
+      claimName: pvc1
