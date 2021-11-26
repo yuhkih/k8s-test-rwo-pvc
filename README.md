@@ -3,8 +3,7 @@
 yamls to test PV (PVC :Read Write Once) access from multiiple pod 
 
 Memos:
-1) be aware of setting nodeSelector value to the environment at the time of experiment
-2) "storageClassName: thin" in PVC definition is VMware VMDK in-tree driver's default value for OpenShift 4.9 (maybe in-tree storage driver be removed in later version of OpenShift)
+1) "storageClassName: thin" in PVC definition is VMware VMDK in-tree driver's default value for OpenShift 4.9 (maybe in-tree storage driver be removed in later version of OpenShift)
 
 **Label nodes for the test ilke the followings**
 
