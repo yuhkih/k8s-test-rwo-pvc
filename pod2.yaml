@@ -4,7 +4,7 @@ metadata:
   name: pod2
 spec: 
   nodeSelector:
-    kubernetes.io/hostname: ocp48-h49p6-worker-2dmjq
+    worker: worker1
   containers:
   - image: ubi8:latest 
     name: pod2
