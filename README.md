@@ -10,8 +10,6 @@ Memos:
 
 ```
 kubectl label nodes ocp48-h49p6-worker-2dmjq worker=worker1
-
 kubectl label nodes ocp48-h49p6-worker-9n5fg worker=worker2
-
 kubectl label nodes ocp48-h49p6-worker-l7lnn worker=worker3
 ```
